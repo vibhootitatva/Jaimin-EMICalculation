@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,139 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmiCalculation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loan Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hy-tV-Hqz">
+                                <rect key="frame" x="5" y="49" width="127" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Loan Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fBP-uM-xh7">
+                                <rect key="frame" x="167" y="49" width="242" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate of Interest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0WK-hj-7Ye">
+                                <rect key="frame" x="5" y="85.5" width="137" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Rate of Interest" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="suZ-bf-ezT">
+                                <rect key="frame" x="167" y="86" width="242" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No of Installments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0d-Bm-TUh">
+                                <rect key="frame" x="5" y="126" width="164" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="No of Installments" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="csf-Kg-eW3">
+                                <rect key="frame" x="170" y="125" width="239" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pre payment period" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NF-fu-M7n">
+                                <rect key="frame" x="5" y="164.5" width="167" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="6" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HCA-AH-mJn">
+                                <rect key="frame" x="175" y="164" width="234" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="yMb-UA-Oha">
+                                <rect key="frame" x="10" y="208" width="394" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B89-Rg-dx7">
+                                        <rect key="frame" x="0.0" y="0.0" width="131.5" height="100"/>
+                                        <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="didTapOnSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cK6-Vt-BzW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uC-Yj-vbu">
+                                        <rect key="frame" x="131.5" y="0.0" width="131" height="100"/>
+                                        <state key="normal" title="Clear"/>
+                                        <connections>
+                                            <action selector="didTapOnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQL-N1-rQf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dH1-O9-Hr5">
+                                        <rect key="frame" x="262.5" y="0.0" width="131.5" height="100"/>
+                                        <state key="normal" title="Time Period"/>
+                                        <connections>
+                                            <action selector="didTapOnClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8tD-rM-0Hi"/>
+                                            <action selector="didTapOnTimePeriod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ubK-lk-7dD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="KRM-Gh-WlF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="suZ-bf-ezT" firstAttribute="top" secondItem="fBP-uM-xh7" secondAttribute="bottom" constant="3" id="33e-WQ-ZGe"/>
+                            <constraint firstItem="0WK-hj-7Ye" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="9zU-iu-AvH"/>
+                            <constraint firstItem="j0d-Bm-TUh" firstAttribute="top" secondItem="0WK-hj-7Ye" secondAttribute="bottom" constant="15" id="B0O-hS-UaO"/>
+                            <constraint firstItem="yMb-UA-Oha" firstAttribute="top" secondItem="HCA-AH-mJn" secondAttribute="bottom" constant="10" id="BAs-EA-XPy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HCA-AH-mJn" secondAttribute="trailing" constant="5" id="Bfg-JK-4Hs"/>
+                            <constraint firstItem="0NF-fu-M7n" firstAttribute="top" secondItem="j0d-Bm-TUh" secondAttribute="bottom" constant="13" id="D9Z-94-9yg"/>
+                            <constraint firstItem="fBP-uM-xh7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="IDm-TU-43i"/>
+                            <constraint firstItem="HCA-AH-mJn" firstAttribute="leading" secondItem="0NF-fu-M7n" secondAttribute="trailing" constant="3" id="Lpd-wr-Cf6"/>
+                            <constraint firstItem="7Hy-tV-Hqz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="PyW-EU-383"/>
+                            <constraint firstItem="fBP-uM-xh7" firstAttribute="leading" secondItem="7Hy-tV-Hqz" secondAttribute="trailing" constant="35" id="TXe-Mx-brj"/>
+                            <constraint firstItem="yMb-UA-Oha" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="WwU-iR-Cvf"/>
+                            <constraint firstItem="0NF-fu-M7n" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="Wyn-vc-Z8f"/>
+                            <constraint firstItem="7Hy-tV-Hqz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="a0S-Wg-z4u"/>
+                            <constraint firstItem="0WK-hj-7Ye" firstAttribute="top" secondItem="7Hy-tV-Hqz" secondAttribute="bottom" constant="10" id="a6n-FT-qX8"/>
+                            <constraint firstItem="suZ-bf-ezT" firstAttribute="leading" secondItem="0WK-hj-7Ye" secondAttribute="trailing" constant="25" id="d8Z-Tv-whz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yMb-UA-Oha" secondAttribute="trailing" constant="10" id="gIQ-QB-d0n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="csf-Kg-eW3" secondAttribute="trailing" constant="5" id="gM6-Iw-BBg"/>
+                            <constraint firstItem="csf-Kg-eW3" firstAttribute="leading" secondItem="j0d-Bm-TUh" secondAttribute="trailing" constant="1" id="hZo-LA-LQh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="suZ-bf-ezT" secondAttribute="trailing" constant="5" id="lBW-xz-Sdw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fBP-uM-xh7" secondAttribute="trailing" constant="5" id="r2d-VY-ZHn"/>
+                            <constraint firstItem="HCA-AH-mJn" firstAttribute="top" secondItem="csf-Kg-eW3" secondAttribute="bottom" constant="5" id="xq7-ek-B3S"/>
+                            <constraint firstItem="j0d-Bm-TUh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="yOp-IG-y4P"/>
+                            <constraint firstItem="csf-Kg-eW3" firstAttribute="top" secondItem="suZ-bf-ezT" secondAttribute="bottom" constant="5" id="yz1-q6-q79"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="1RM-gd-zmL" id="7jh-GQ-fpt"/>
+                        <outlet property="loanAmountTextField" destination="fBP-uM-xh7" id="fCx-gE-NX1"/>
+                        <outlet property="noofInstallmentsTextField" destination="csf-Kg-eW3" id="xJG-7B-haF"/>
+                        <outlet property="paymentPeriodTextField" destination="HCA-AH-mJn" id="ezi-aT-uwV"/>
+                        <outlet property="pickerView" destination="ZQe-Uf-o1b" id="bw0-So-PI7"/>
+                        <outlet property="rateOfInterestTextField" destination="suZ-bf-ezT" id="Q4l-ET-hlP"/>
+                        <outlet property="timePeriodButton" destination="dH1-O9-Hr5" id="Sqj-R6-Oic"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pickerView contentMode="scaleToFill" id="ZQe-Uf-o1b">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="162"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <connections>
+                        <outlet property="dataSource" destination="BYZ-38-t0r" id="14P-5D-tAQ"/>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="1Iq-MK-fmI"/>
+                    </connections>
+                </pickerView>
+                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="1RM-gd-zmL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="216"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </datePicker>
             </objects>
+            <point key="canvasLocation" x="-87" y="118"/>
         </scene>
     </scenes>
 </document>

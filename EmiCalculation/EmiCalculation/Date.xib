@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DateView" id="iN0-l3-epB" customClass="DateView" customModule="EmiCalculation" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date Format" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7tk-bF-PQv">
+                    <rect key="frame" x="10" y="74" width="95" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0NL-Wn-sfP">
+                    <rect key="frame" x="135" y="69" width="269" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mz2-TQ-w6h">
+                    <rect key="frame" x="10" y="115" width="78" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pKd-NO-Ngm">
+                    <rect key="frame" x="135" y="113" width="269" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMX-hw-x7y">
+                    <rect key="frame" x="10" y="161" width="70" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HIs-Qo-9yU">
+                    <rect key="frame" x="134" y="157" width="270" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mz2-TQ-w6h" firstAttribute="top" secondItem="7tk-bF-PQv" secondAttribute="bottom" constant="20" id="2ZY-nJ-QSu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0NL-Wn-sfP" secondAttribute="trailing" constant="10" id="6Y9-gj-osJ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pKd-NO-Ngm" secondAttribute="trailing" constant="10" id="6hp-dT-iok"/>
+                <constraint firstItem="0NL-Wn-sfP" firstAttribute="leading" secondItem="7tk-bF-PQv" secondAttribute="trailing" constant="30" id="7f3-2d-s6a"/>
+                <constraint firstItem="pKd-NO-Ngm" firstAttribute="leading" secondItem="Mz2-TQ-w6h" secondAttribute="trailing" constant="47" id="Def-rH-Y5C"/>
+                <constraint firstItem="7tk-bF-PQv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="HI9-93-fZ2"/>
+                <constraint firstItem="0NL-Wn-sfP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="QyM-qM-IhE"/>
+                <constraint firstItem="pKd-NO-Ngm" firstAttribute="top" secondItem="0NL-Wn-sfP" secondAttribute="bottom" constant="10" id="TcV-kg-8Zp"/>
+                <constraint firstItem="cMX-hw-x7y" firstAttribute="top" secondItem="Mz2-TQ-w6h" secondAttribute="bottom" constant="25" id="XOg-R0-FPa"/>
+                <constraint firstItem="Mz2-TQ-w6h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="YWq-nN-ASZ"/>
+                <constraint firstItem="cMX-hw-x7y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="cl9-NX-Qcc"/>
+                <constraint firstItem="HIs-Qo-9yU" firstAttribute="leading" secondItem="cMX-hw-x7y" secondAttribute="trailing" constant="54" id="kdg-AL-ccD"/>
+                <constraint firstItem="HIs-Qo-9yU" firstAttribute="top" secondItem="pKd-NO-Ngm" secondAttribute="bottom" constant="10" id="oJB-Gs-Gkt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HIs-Qo-9yU" secondAttribute="trailing" constant="10" id="q98-Kd-WxT"/>
+                <constraint firstItem="7tk-bF-PQv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="z3N-k6-nyI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="dateFormatTextField" destination="0NL-Wn-sfP" id="sqQ-TF-uR2"/>
+                <outlet property="endDateTextField" destination="HIs-Qo-9yU" id="uJT-9x-Wfp"/>
+                <outlet property="startDateTextField" destination="pKd-NO-Ngm" id="ra8-Z3-FHw"/>
+            </connections>
+            <point key="canvasLocation" x="-9" y="99"/>
+        </view>
+    </objects>
+</document>

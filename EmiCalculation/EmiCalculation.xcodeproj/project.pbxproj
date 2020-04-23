@@ -13,6 +13,8 @@
 		6F424CD22451516C0071A168 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F424CD02451516C0071A168 /* Main.storyboard */; };
 		6F424CD4245151770071A168 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F424CD3245151770071A168 /* Assets.xcassets */; };
 		6F424CD7245151770071A168 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F424CD5245151770071A168 /* LaunchScreen.storyboard */; };
+		6F424CDF245180ED0071A168 /* Date.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F424CDE245180ED0071A168 /* Date.xib */; };
+		6F424CE1245184FF0071A168 /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F424CE0245184FF0071A168 /* DateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		6F424CD3245151770071A168 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F424CD6245151770071A168 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6F424CD8245151770071A168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F424CDE245180ED0071A168 /* Date.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Date.xib; sourceTree = "<group>"; };
+		6F424CE0245184FF0071A168 /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				6F424CC92451516C0071A168 /* EmiCalculation */,
-				6F424CC82451516C0071A168 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +54,7 @@
 				6F424CC72451516C0071A168 /* EmiCalculation.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		6F424CC92451516C0071A168 /* EmiCalculation */ = {
@@ -59,10 +63,13 @@
 				6F424CCA2451516C0071A168 /* AppDelegate.swift */,
 				6F424CCC2451516C0071A168 /* SceneDelegate.swift */,
 				6F424CCE2451516C0071A168 /* ViewController.swift */,
+				6F424CDE245180ED0071A168 /* Date.xib */,
+				6F424CE0245184FF0071A168 /* DateView.swift */,
 				6F424CD02451516C0071A168 /* Main.storyboard */,
 				6F424CD3245151770071A168 /* Assets.xcassets */,
 				6F424CD5245151770071A168 /* LaunchScreen.storyboard */,
 				6F424CD8245151770071A168 /* Info.plist */,
+				6F424CC82451516C0071A168 /* Products */,
 			);
 			path = EmiCalculation;
 			sourceTree = "<group>";
@@ -127,6 +134,7 @@
 			files = (
 				6F424CD7245151770071A168 /* LaunchScreen.storyboard in Resources */,
 				6F424CD4245151770071A168 /* Assets.xcassets in Resources */,
+				6F424CDF245180ED0071A168 /* Date.xib in Resources */,
 				6F424CD22451516C0071A168 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,6 +148,7 @@
 			files = (
 				6F424CCF2451516C0071A168 /* ViewController.swift in Sources */,
 				6F424CCB2451516C0071A168 /* AppDelegate.swift in Sources */,
+				6F424CE1245184FF0071A168 /* DateView.swift in Sources */,
 				6F424CCD2451516C0071A168 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
